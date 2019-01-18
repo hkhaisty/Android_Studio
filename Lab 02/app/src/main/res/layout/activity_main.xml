@@ -9,15 +9,28 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="128dp"
-        android:layout_height="113dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="78dp">
+        android:layout_width="144dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="86dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/pizzabyalfredo"
+            android:text="Pan Pizza" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="13dp"
             android:layout_weight="1"
             android:fontFamily="@font/pizzabyalfredo"
             android:text="Thin Crust" />
@@ -29,20 +42,12 @@
             android:layout_weight="1"
             android:fontFamily="@font/pizzabyalfredo"
             android:text="Normal Crust" />
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/pizzabyalfredo"
-            android:text="Pan Pizza" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="112dp"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -54,16 +59,17 @@
         app:fontFamily="@font/childrensparty"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Feta Cheese"
+        android:fontFamily="@font/pizzabyalfredo"
         tools:layout_editor_absoluteX="205dp"
         tools:layout_editor_absoluteY="78dp" />
 
@@ -72,6 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Black Olives"
+        android:fontFamily="@font/pizzabyalfredo"
         tools:layout_editor_absoluteX="205dp"
         tools:layout_editor_absoluteY="110dp" />
 
@@ -80,14 +87,36 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Spinaich"
+        android:fontFamily="@font/pizzabyalfredo"
         tools:layout_editor_absoluteX="205dp"
         tools:layout_editor_absoluteY="142dp" />
 
     <CheckBox
         android:id="@+id/checkBox4"
-        android:layout_width="wrap_content"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/pizzabyalfredo"
         android:text="Onions"
         tools:layout_editor_absoluteX="205dp"
         tools:layout_editor_absoluteY="174dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/childrensparty"
+        android:text="Dine-In or To Go?"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.064" />
 </android.support.constraint.ConstraintLayout>
