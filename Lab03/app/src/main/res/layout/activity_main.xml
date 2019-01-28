@@ -99,9 +99,9 @@
         android:text="Dine In or To Go"
         android:textSize="40dp"
         app:fontFamily="@font/childrensparty"
-        app:layout_constraintBottom_toTopOf="@+id/dineinbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="552dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -109,12 +109,14 @@
         android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Pizza Size"
         android:textSize="40dp"
         app:fontFamily="@font/childrensparty"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -178,38 +180,6 @@
         >
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/dineinbutton"
-        android:layout_width="122dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/forhere"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/togobutton"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/togobutton"
-        android:layout_width="140dp"
-        android:layout_height="118dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/delivery"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dineinbutton"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="276dp"
@@ -224,10 +194,10 @@
         android:progress="5"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.011" />
 
     <TextView
         android:id="@+id/textView5"
@@ -248,20 +218,70 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="134dp"
-        android:layout_height="18dp"
+        android:id="@+id/priceText"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="12dp"
-        android:text="TextView"
+        android:text="PRICE"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <RadioGroup
+        android:layout_width="158dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/pickupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/pizzabyalfredo"
+            android:gravity="center"
+            android:text="Pickup" />
+
+        <RadioButton
+            android:id="@+id/dineInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/pizzabyalfredo"
+            android:gravity="center"
+            android:text="Dine-In" />
+
+        <RadioButton
+            android:id="@+id/deliverButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/pizzabyalfredo"
+            android:gravity="center"
+            android:text="At Restaurant" />
+    </RadioGroup>
     />
 
 
