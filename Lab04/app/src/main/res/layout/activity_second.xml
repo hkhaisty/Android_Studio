@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="cs2302, Welcome to my webpage!"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="49dp" />
+</LinearLayout>
+
