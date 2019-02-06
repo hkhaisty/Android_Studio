@@ -11,7 +11,7 @@
         android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="cs2302, Welcome to my webpage!"
+        android:text="Welcome to my webpage!"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="15dp"
