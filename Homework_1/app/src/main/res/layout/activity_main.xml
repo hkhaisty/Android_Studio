@@ -30,9 +30,9 @@
             android:id="@+id/user_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" "
             android:width="200px"
             android:shadowColor="@android:color/holo_orange_light"
+            android:text=" "
             android:textColor="@android:color/white" />
     </TableRow>
 
@@ -73,28 +73,28 @@
         <TextView
             android:id="@+id/ten_percent_tip"
             android:layout_width="wrap_content"
-            android:text="0.0"
-            android:gravity="center"
             android:layout_height="50dp"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
             android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/fifteen_percent_tip"
             android:layout_width="wrap_content"
-            android:text="0.0"
-            android:gravity="center"
             android:layout_height="50dp"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
             android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/twenty_percent_tip"
             android:layout_width="wrap_content"
-            android:text="0.0"
-            android:gravity="center"
             android:layout_height="50dp"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
             android:textColor="@android:color/white" />
     </TableRow>
 
@@ -113,27 +113,27 @@
             android:id="@+id/ten_percent_total"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="0.0"
-            android:gravity="center"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
             android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/fifteen_percent_total"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="0.0"
-            android:gravity="center"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
             android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/twenty_percent_total"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="0.0"
-            android:gravity="center"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
             android:textColor="@android:color/white" />
 
     </TableRow>
@@ -174,9 +174,9 @@
             android:id="@+id/seekbar_tip_amount"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="0.0"
-            android:gravity="center"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
             android:textColor="@android:color/white" />
 
         <TextView
@@ -190,9 +190,20 @@
             android:id="@+id/custom_tip_total"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="0.0"
-            android:gravity="center"
             android:width="30dp"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_column="4"
+            android:width="10dp"
+            android:id="@+id/calcButton"
+            android:background="@drawable/button_background"
+            android:text="Calculate"
             android:textColor="@android:color/white" />
     </TableRow>
 </TableLayout>
