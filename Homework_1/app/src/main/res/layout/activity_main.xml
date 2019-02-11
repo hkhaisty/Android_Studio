@@ -1,0 +1,198 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <TableRow>
+
+        <TextView android:layout_height="100dp" />
+    </TableRow>
+
+    <TextView
+        android:layout_height="109dp"
+        android:layout_column="3"
+        android:fontFamily="@font/sweetcookie"
+        android:gravity="center"
+        android:text="Tip Calculator"
+        android:textColor="@android:color/white"
+        android:textSize="40dp" />
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="Bill Total: "
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:width="200px"
+            android:shadowColor="@android:color/holo_orange_light"
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_width="50px" />
+
+        <TextView android:layout_width="50px" />
+
+        <TextView
+            android:layout_width="250px"
+            android:gravity="center"
+            android:text="10%"
+            android:textColor="@android:color/holo_orange_light" />
+
+        <TextView
+            android:layout_width="250px"
+            android:gravity="center"
+            android:text="15%"
+            android:textColor="@android:color/holo_orange_light" />
+
+        <TextView
+            android:layout_width="250px"
+            android:gravity="center"
+            android:text="20%"
+            android:textColor="@android:color/holo_orange_light" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:text="Tip:"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ten_percent_tip"
+            android:layout_width="wrap_content"
+            android:text="0.0"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/fifteen_percent_tip"
+            android:layout_width="wrap_content"
+            android:text="0.0"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/twenty_percent_tip"
+            android:layout_width="wrap_content"
+            android:text="0.0"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:text="Total: "
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ten_percent_total"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="0.0"
+            android:gravity="center"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/fifteen_percent_total"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="0.0"
+            android:gravity="center"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/twenty_percent_total"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="0.0"
+            android:gravity="center"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:text="Custom:"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/seekbar_tip"
+            android:layout_width="71dp"
+            android:layout_column="1"
+            android:gravity="center"
+            android:max="200" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:gravity="end"
+            android:text="Tip:"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/seekbar_tip_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="0.0"
+            android:gravity="center"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:text="Total:"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/custom_tip_total"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="0.0"
+            android:gravity="center"
+            android:width="30dp"
+            android:textColor="@android:color/white" />
+    </TableRow>
+</TableLayout>
