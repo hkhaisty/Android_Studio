@@ -1,3 +1,10 @@
+/*
+Name: Harriet Haisty
+Instructor: Dr. Selena He
+Assignment: Homework 1
+Date: 2/10/19
+ */
+
 package com.example.homework_1;
 
 import android.support.v7.app.AppCompatActivity;
