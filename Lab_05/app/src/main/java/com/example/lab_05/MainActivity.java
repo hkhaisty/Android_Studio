@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
         startActivity(intent2);
+
 //        if(user) {
 //            Intent intent = new Intent(this, Activity_A.class);
 //        }
