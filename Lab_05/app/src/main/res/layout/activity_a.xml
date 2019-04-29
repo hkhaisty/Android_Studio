@@ -14,7 +14,7 @@
         android:layout_marginTop="120dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="644dp"
-        android:text="TextView"
+        android:text="URL: http://android.developer.com in Activity B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,8 @@
         android:layout_marginTop="66dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="504dp"
-        android:text="Button"
+        android:text="Go Back
+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
