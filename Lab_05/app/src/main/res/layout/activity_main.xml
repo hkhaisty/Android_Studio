@@ -11,9 +11,18 @@
         android:id="@+id/openBrowser"
         android:layout_width="156dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_below="@+id/textView"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="348dp"
+=======
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="433dp"
+>>>>>>> c30d662c387083c28c185e85d85b05c6e340748a
         android:text="Open Browser"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,6 +35,7 @@
 
     <TextView
         android:id="@+id/textView"
+<<<<<<< HEAD
         android:layout_width="386dp"
         android:layout_height="161dp"
         android:layout_alignParentStart="true"
@@ -34,6 +44,15 @@
         android:layout_marginTop="76dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="16dp"
+=======
+        android:layout_width="363dp"
+        android:layout_height="84dp"
+        android:layout_above="@+id/openBrowser"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="66dp"
+>>>>>>> c30d662c387083c28c185e85d85b05c6e340748a
         android:fontFamily="@font/fontania"
         android:text="Open Broswer"
         android:textAlignment="center"

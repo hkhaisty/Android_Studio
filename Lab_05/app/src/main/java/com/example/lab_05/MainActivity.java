@@ -28,6 +28,30 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
+=======
+        }
+
+    public void onButtonClick()
+    {
+
+        Intent intent = new Intent(MainActivity.this, Activity_A.class);
+        Intent intent2 = new Intent(this, Activity_B.class);
+
+        startActivity(intent);
+        startActivity(intent2);
+
+//        if(user) {
+//            Intent intent = new Intent(this, Activity_A.class);
+//        }
+//        else if () {
+//            startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://developer.android.com")));
+//        }
+//        else {
+//            Intent intent = new Intent(this, Activity_B.class);
+//        }
+
+>>>>>>> c30d662c387083c28c185e85d85b05c6e340748a
     }
 
 }
